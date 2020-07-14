@@ -27,6 +27,7 @@ class TransactionsRepository {
     const incomeAndOutcome = this.transactions.reduce(
       (acc, el) => {
         acc[el.type] += el.value;
+
         return acc;
       },
       {
